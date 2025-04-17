@@ -17,7 +17,7 @@ fn main(
     let expected_root = compute_merkle_root(default_leaf, index, old_path);
     assert(expected_root == old_root);
 
-    let expected_new_root: Field = compute_merkle_root(new_leaf, index, new_path);
+    let expected_new_root: Field = compute_merkle_root(new_leaf, index, old_path);
     assert(expected_new_root == new_root);
 
 }

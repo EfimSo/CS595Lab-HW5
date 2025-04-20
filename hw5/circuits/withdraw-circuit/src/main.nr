@@ -1,5 +1,5 @@
 use dep::std::merkle::compute_merkle_root;
-use std::hash::pedersen_hash
+use std::hash::pedersen_hash;
 
 fn main(
     r: Field,

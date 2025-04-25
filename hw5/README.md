@@ -1,3 +1,6 @@
+### The addresses and transaction hashes for extension 1 are in the file called "Extension 1 submission.txt"
+
+
 # 🛡️ Homework Assignment: Build a Privacy Preserving Asset Transfer Mechanism with Noir on Ethereum
 
 ---

@@ -1,0 +1,31 @@
+Main assignment:
+I renamed the circuits to be called deposit.nr and withdraw.nr for readability. When compiling the proofs, both circuits were called main.nr.
+
+Extension 1:
+
+Addresses:
+DepositVerifier - 0xC0f19221E23026a8d42B70C9d7Bd6095dDc39E66
+WithdrawVerifier - 0xAA2C7e5EBB9B9c705cA5F39c048EFE4Fb97ad9A4
+WirlWind - 0x98F40E4bea7711e63d6B2179B9075d06fCdCBD2A
+
+Deposit Hash: 0xf2d7bb2ad6f6fbaa2a918828c01ea9b63539413bef1e96737575e5b0d94abb9d
+Withdraw Hash: 0x542b1b397344936d76002205d54beb5fe0f6924396185d768ec084b0af60d9b9
+
+
+
+Deposit
+https://sepolia.etherscan.io/tx/0xf2d7bb2ad6f6fbaa2a918828c01ea9b63539413bef1e96737575e5b0d94abb9d
+
+Withdraw
+https://sepolia.etherscan.io/tx/0x542b1b397344936d76002205d54beb5fe0f6924396185d768ec084b0af60d9b9
+
+
+Deposit script 
+echo "\"0x$(od -An -v -t x1 ./target/proof | tr -d ' \n' | sed 's/^.\{264\}//')\"" > proof.txt
+
+Withdraw script
+echo "\"0x$(od -An -v -t x1 ./target/proof | tr -d ' \n' | sed 's/^.\{136\}//')\"" >  proof.txt
+
+
+
+
